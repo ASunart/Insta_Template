@@ -2,7 +2,7 @@ class IgTemplate extends HTMLElement {
   //Metodo para declarar que atributos/parametros
   //vamos a utilizar en nuestra clase
   static get observedAttributes() {
-    return ['username', 'location', 'caption', 'mainimg', 'profileicon'];
+    return ['username', 'location', 'caption', 'mainimg', 'profileicon', 'likes', 'time', 'comments'];
   }
 
   constructor() {
@@ -51,16 +51,16 @@ class IgTemplate extends HTMLElement {
         <img src="./assets/save-icon.png" alt="" class="btnSave">
     </div>
 </div>
-<h4 class="likes">420.389 likes</h4>
+<h4 class="likes">${this.likes} likes</h4>
 <h4 class="captions"><b>${this.username} </b>${this.caption}</h4>
-<h4 class="comments">View all 348 comments</h4>
+<h4 class="comments">View all ${this.comments} comments</h4>
 <div class="addComment">
     <div class="userImg">
         <img src="${this.profileicon}" alt="">
     </div>
     <input type="text" class="theComment" placeholder="Add a comment..."></input>
 </div>
-<h5 class="time">28 minutes ago</h5>
+<h5 class="time">${this.time} ago</h5>
 </div>
     </section>` 
   }

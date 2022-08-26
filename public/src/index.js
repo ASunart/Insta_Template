@@ -17,7 +17,10 @@ class AppContainer extends HTMLElement{
         location="Location"
         caption="Caption as you want" 
         mainimg="./assets/loading-img.jpg"
-        profileicon="./assets/account.png">
+        profileicon="./assets/account.png"
+        likes="#"
+        time="#"
+        comments="#">
         </ig-template>
 
         <br>
@@ -27,7 +30,10 @@ class AppContainer extends HTMLElement{
         caption="Final MIC 2022" 
         location="Estadio de Palamós"
         mainimg="./assets/mainImg.png"
-        profileicon="./assets/profile-icon.png">
+        profileicon="./assets/profile-icon.png"
+        likes="482.340"
+        time="28 minutes"
+        comments="382">
         </ig-template>
         `
     }
